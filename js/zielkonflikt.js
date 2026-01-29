@@ -7,23 +7,23 @@ die sich teilweise <strong>widersprechen</strong>. Dies sind typische <strong>Zi
 in der Produktionswirtschaft.
 </p>
 
-<div style="background:#fff3cd; border-radius:16px; padding:32px; margin:32px 0; border-left:4px solid #FF9500;">
+<div style="background:var(--card-bg); border-radius:16px; padding:32px; margin:32px 0; border:1px solid var(--gray-2);">
   <h3 style="margin-top:0; color:var(--text-primary);">Hauptzielkonflikt bei AutoTech GmbH</h3>
   <div style="display:grid; grid-template-columns:1fr auto 1fr; gap:24px; align-items:stretch; margin-top:24px;">
-    <div style="background:white; padding:24px; border-radius:12px; border:2px solid #007AFF; min-height:180px; display:flex; flex-direction:column;">
-      <h4 style="color:#007AFF; margin-top:0;">Big Data & Werkstattfertigung</h4>
+    <div style="background:white; padding:24px; border-radius:12px; border:1px solid var(--gray-3); min-height:180px; display:flex; flex-direction:column;">
+      <h4 style="margin-top:0;">Big Data & Werkstattfertigung</h4>
       <p style="margin:8px 0;"><strong>Fordern:</strong></p>
-      <ul style="margin:10px 0 0 20px; flex-grow:1;">
+      <ul style="margin:10px 0 0 20px; flex-grow:1; color:var(--text-secondary);">
         <li>Hohe Flexibilität</li>
         <li>Produktvielfalt</li>
         <li>Schnelle Anpassung</li>
       </ul>
     </div>
-    <div style="font-size:32px; font-weight:800; color:#FF3B30; display:flex; align-items:center;">VS</div>
-    <div style="background:white; padding:24px; border-radius:12px; border:2px solid #34C759; min-height:180px; display:flex; flex-direction:column;">
-      <h4 style="color:#34C759; margin-top:0;">ABC-XYZ-Analyse</h4>
+    <div style="font-size:32px; font-weight:800; color:var(--text-primary); display:flex; align-items:center;">VS</div>
+    <div style="background:white; padding:24px; border-radius:12px; border:1px solid var(--gray-3); min-height:180px; display:flex; flex-direction:column;">
+      <h4 style="margin-top:0;">ABC-XYZ-Analyse</h4>
       <p style="margin:8px 0;"><strong>Fordert:</strong></p>
-      <ul style="margin:10px 0 0 20px; flex-grow:1;">
+      <ul style="margin:10px 0 0 20px; flex-grow:1; color:var(--text-secondary);">
         <li>Kosteneffizienz</li>
         <li>Niedrige Lagerbestände</li>
         <li>Standardisierung</li>
@@ -34,107 +34,107 @@ in der Produktionswirtschaft.
 
 <h3>Drei zentrale Zielkonflikte:</h3>
 
-<div class="card" style="border-left:4px solid #FF3B30; min-height:300px;">
+<div class="card" style="border-left:4px solid var(--text-primary); min-height:300px;">
   <h4>1. Big Data ⚔ ABC-XYZ-Analyse</h4>
   
   <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0;">
-    <div style="background:#e3f2fd; padding:16px; border-radius:8px;">
+    <div style="background:var(--card-bg); padding:16px; border-radius:8px; border:1px solid var(--gray-2);">
       <p style="margin:0 0 8px 0;"><strong>Big Data möchte:</strong></p>
-      <p style="font-size:15px; margin:0;">Echtzeitdaten erfassen und sofort reagieren → schnelle Produktion verschiedener Varianten</p>
+      <p style="font-size:15px; margin:0; color:var(--text-secondary);">Echtzeitdaten erfassen und sofort reagieren → schnelle Produktion verschiedener Varianten</p>
     </div>
-    <div style="background:#e8f5e9; padding:16px; border-radius:8px;">
+    <div style="background:var(--card-bg); padding:16px; border-radius:8px; border:1px solid var(--gray-2);">
       <p style="margin:0 0 8px 0;"><strong>ABC-XYZ möchte:</strong></p>
-      <p style="font-size:15px; margin:0;">Lagerbestände minimieren, nur A-X Artikel just-in-time</p>
+      <p style="font-size:15px; margin:0; color:var(--text-secondary);">Lagerbestände minimieren, nur A-X Artikel just-in-time</p>
     </div>
   </div>
   
-  <div style="background:#fff3cd; padding:16px; border-radius:8px; margin-top:16px; border-left:4px solid #FF9500;">
+  <div style="background:white; padding:16px; border-radius:8px; margin-top:16px; border:1px solid var(--gray-2);">
     <p style="margin:0 0 8px 0;"><strong>Das Problem:</strong></p>
-    <p style="margin:0 0 8px 0; font-size:15px;">Big Data erkennt Nachfragespitzen für Motorvarianten. ABC-XYZ hat nur Standardteile vorrätig.</p>
-    <p style="margin:0; color:#d63031; font-weight:600; font-size:15px;">→ Entweder hohe Lagerkosten ODER lange Lieferzeiten</p>
+    <p style="margin:0 0 8px 0; font-size:15px; color:var(--text-secondary);">Big Data erkennt Nachfragespitzen für Motorvarianten. ABC-XYZ hat nur Standardteile vorrätig.</p>
+    <p style="margin:0; font-weight:600; font-size:15px;">→ Entweder hohe Lagerkosten ODER lange Lieferzeiten</p>
   </div>
 </div>
 
-<div class="card" style="border-left:4px solid #007AFF; min-height:300px;">
+<div class="card" style="border-left:4px solid var(--text-primary); min-height:300px;">
   <h4>2. Werkstattfertigung ⚔ ABC-XYZ-Analyse</h4>
   
   <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0;">
-    <div style="background:#f3e5f5; padding:16px; border-radius:8px;">
+    <div style="background:var(--card-bg); padding:16px; border-radius:8px; border:1px solid var(--gray-2);">
       <p style="margin:0 0 8px 0;"><strong>Werkstattfertigung möchte:</strong></p>
-      <p style="font-size:15px; margin:0;">Hohe Flexibilität durch spezialisierte Werkstätten</p>
+      <p style="font-size:15px; margin:0; color:var(--text-secondary);">Hohe Flexibilität durch spezialisierte Werkstätten</p>
     </div>
-    <div style="background:#e8f5e9; padding:16px; border-radius:8px;">
+    <div style="background:var(--card-bg); padding:16px; border-radius:8px; border:1px solid var(--gray-2);">
       <p style="margin:0 0 8px 0;"><strong>ABC-XYZ möchte:</strong></p>
-      <p style="font-size:15px; margin:0;">Klare Prognosen und standardisierte Prozesse</p>
+      <p style="font-size:15px; margin:0; color:var(--text-secondary);">Klare Prognosen und standardisierte Prozesse</p>
     </div>
   </div>
   
-  <div style="background:#e3f2fd; padding:16px; border-radius:8px; margin-top:16px; border-left:4px solid #007AFF;">
+  <div style="background:white; padding:16px; border-radius:8px; margin-top:16px; border:1px solid var(--gray-2);">
     <p style="margin:0 0 8px 0;"><strong>Das Problem:</strong></p>
-    <p style="margin:0 0 8px 0; font-size:15px;">Werkstattfertigung erzeugt viele Varianten mit unterschiedlichen Durchlaufzeiten. Präzise XYZ-Prognosen unmöglich.</p>
-    <p style="margin:0; color:#0984e3; font-weight:600; font-size:15px;">→ Entweder hohe Sicherheitsbestände ODER häufige Fehlteile</p>
+    <p style="margin:0 0 8px 0; font-size:15px; color:var(--text-secondary);">Werkstattfertigung erzeugt viele Varianten mit unterschiedlichen Durchlaufzeiten. Präzise XYZ-Prognosen unmöglich.</p>
+    <p style="margin:0; font-weight:600; font-size:15px;">→ Entweder hohe Sicherheitsbestände ODER häufige Fehlteile</p>
   </div>
   
-  <div class="example-box" style="margin-top:16px; font-size:15px; background:#f5f5f5; border-left-color:#007AFF;">
+  <div class="example-box" style="margin-top:16px; font-size:15px;">
     <p style="margin:0;"><strong>Beispiel:</strong> AutoTech produziert 15 Motorblock-Varianten. Jede hat andere Bearbeitungszeiten (45-120 Min). 
     ABC-XYZ kann keinen stabilen VK berechnen → alle als Z-Artikel → hohe Lagerkosten.</p>
   </div>
 </div>
 
-<div class="card" style="border-left:4px solid #5856D6; min-height:300px;">
+<div class="card" style="border-left:4px solid var(--text-primary); min-height:300px;">
   <h4>3. Big Data ⚔ Werkstattfertigung</h4>
   
   <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0;">
-    <div style="background:#e3f2fd; padding:16px; border-radius:8px;">
+    <div style="background:var(--card-bg); padding:16px; border-radius:8px; border:1px solid var(--gray-2);">
       <p style="margin:0 0 8px 0;"><strong>Big Data möchte:</strong></p>
-      <p style="font-size:15px; margin:0;">Standardisierte, vorhersagbare Prozesse für Algorithmen</p>
+      <p style="font-size:15px; margin:0; color:var(--text-secondary);">Standardisierte, vorhersagbare Prozesse für Algorithmen</p>
     </div>
-    <div style="background:#f3e5f5; padding:16px; border-radius:8px;">
+    <div style="background:var(--card-bg); padding:16px; border-radius:8px; border:1px solid var(--gray-2);">
       <p style="margin:0 0 8px 0;"><strong>Werkstattfertigung möchte:</strong></p>
-      <p style="font-size:15px; margin:0;">Individuelle Bearbeitungswege und Flexibilität</p>
+      <p style="font-size:15px; margin:0; color:var(--text-secondary);">Individuelle Bearbeitungswege und Flexibilität</p>
     </div>
   </div>
   
-  <div style="background:#f3e5f5; padding:16px; border-radius:8px; margin-top:16px; border-left:4px solid #5856D6;">
+  <div style="background:white; padding:16px; border-radius:8px; margin-top:16px; border:1px solid var(--gray-2);">
     <p style="margin:0 0 8px 0;"><strong>Das Problem:</strong></p>
-    <p style="margin:0 0 8px 0; font-size:15px;">Big Data-Algorithmen brauchen gleichförmige Prozesse. Werkstattfertigung erzeugt hochvariable Prozesse.</p>
-    <p style="margin:0; color:#6c5ce7; font-weight:600; font-size:15px;">→ Entweder schlechte Datenqualität ODER Einschränkung der Flexibilität</p>
+    <p style="margin:0 0 8px 0; font-size:15px; color:var(--text-secondary);">Big Data-Algorithmen brauchen gleichförmige Prozesse. Werkstattfertigung erzeugt hochvariable Prozesse.</p>
+    <p style="margin:0; font-weight:600; font-size:15px;">→ Entweder schlechte Datenqualität ODER Einschränkung der Flexibilität</p>
   </div>
 </div>
 
 <h3>Lösungsstrategien für AutoTech GmbH</h3>
 
 <div class="card-grid">
-  <div class="card" style="border-top:4px solid var(--success);">
+  <div class="card" style="border-top:4px solid var(--text-primary);">
     <h4>1. Hybridansatz</h4>
-    <p>Kombination von Fließfertigung (Standard) und Werkstatt (Spezial)</p>
+    <p style="color:var(--text-secondary);">Kombination von Fließfertigung (Standard) und Werkstatt (Spezial)</p>
     <div style="background:var(--card-bg); padding:12px; border-radius:8px; margin-top:12px; font-size:14px;">
       <strong>→ Standardmotoren:</strong> Fließfertigung + ABC-XYZ<br>
       <strong>→ Spezialmotoren:</strong> Werkstatt + Big Data
     </div>
   </div>
   
-  <div class="card" style="border-top:4px solid var(--primary);">
+  <div class="card" style="border-top:4px solid var(--text-primary);">
     <h4>2. Priorisierung</h4>
-    <p>Klare Zielhierarchie nach Artikelklasse</p>
+    <p style="color:var(--text-secondary);">Klare Zielhierarchie nach Artikelklasse</p>
     <div style="background:var(--card-bg); padding:12px; border-radius:8px; margin-top:12px; font-size:14px;">
       <strong>→ A-X Artikel:</strong> Kosten minimieren<br>
       <strong>→ B/C Artikel:</strong> Flexibilität maximieren
     </div>
   </div>
   
-  <div class="card" style="border-top:4px solid var(--warning);">
+  <div class="card" style="border-top:4px solid var(--text-primary);">
     <h4>3. Modularisierung</h4>
-    <p>Standardmodule kombinieren statt Einzelfertigung</p>
+    <p style="color:var(--text-secondary);">Standardmodule kombinieren statt Einzelfertigung</p>
     <div style="background:var(--card-bg); padding:12px; border-radius:8px; margin-top:12px; font-size:14px;">
       <strong>→ Basismotor:</strong> Standardisiert (ABC-XYZ)<br>
       <strong>→ Zusatzkomponenten:</strong> Flexibel (Werkstatt)
     </div>
   </div>
   
-  <div class="card" style="border-top:4px solid var(--secondary);">
+  <div class="card" style="border-top:4px solid var(--text-primary);">
     <h4>4. Dynamische Anpassung</h4>
-    <p>Big Data für flexible Umplanung nutzen</p>
+    <p style="color:var(--text-secondary);">Big Data für flexible Umplanung nutzen</p>
     <div style="background:var(--card-bg); padding:12px; border-radius:8px; margin-top:12px; font-size:14px;">
       <strong>→ Echtzeitdaten:</strong> ABC-XYZ anpassen<br>
       <strong>→ Kapazitäten:</strong> Dynamisch steuern
@@ -142,16 +142,16 @@ in der Produktionswirtschaft.
   </div>
 </div>
 
-<div style="background:#007AFF; border-radius:16px; padding:40px; margin:48px 0; color:white;">
-  <h3 style="margin-top:0; color:white;">Fazit</h3>
-  <p style="font-size:18px; color:white;">
+<div style="background:var(--card-bg); border-radius:16px; padding:40px; margin:48px 0; border:1px solid var(--gray-2);">
+  <h3 style="margin-top:0;">Fazit</h3>
+  <p style="font-size:18px;">
     Es gibt <strong>keine perfekte Lösung</strong> für alle Zielkonflikte. AutoTech GmbH muss je nach 
     Produkttyp, Marktsituation und Strategie entscheiden:
   </p>
-  <ul style="font-size:17px; margin-left:24px; color:white;">
-    <li style="margin-bottom:12px;"><strong>Kostenführerschaft:</strong> ABC-XYZ im Fokus</li>
-    <li style="margin-bottom:12px;"><strong>Differenzierung:</strong> Big Data + Werkstatt für Individualisierung</li>
-    <li style="margin-bottom:12px;"><strong>Balanced Approach:</strong> Hybridmodell mit Produktkategorien</li>
+  <ul style="font-size:17px; margin-left:24px; color:var(--text-secondary);">
+    <li style="margin-bottom:12px;"><strong style="color:var(--text-primary);">Kostenführerschaft:</strong> ABC-XYZ im Fokus</li>
+    <li style="margin-bottom:12px;"><strong style="color:var(--text-primary);">Differenzierung:</strong> Big Data + Werkstatt für Individualisierung</li>
+    <li style="margin-bottom:12px;"><strong style="color:var(--text-primary);">Balanced Approach:</strong> Hybridmodell mit Produktkategorien</li>
   </ul>
 </div>
 
@@ -211,19 +211,19 @@ in der Produktionswirtschaft.
   </p>
   
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:16px; margin:32px 0;">
-    <div style="background:white; padding:20px; border-radius:12px;">
+    <div style="background:white; padding:20px; border-radius:12px; border:1px solid var(--gray-2);">
       <div style="font-size:32px; margin-bottom:8px;">✓</div>
       <strong>Big Data in Industrie 4.0</strong>
     </div>
-    <div style="background:white; padding:20px; border-radius:12px;">
+    <div style="background:white; padding:20px; border-radius:12px; border:1px solid var(--gray-2);">
       <div style="font-size:32px; margin-bottom:8px;">✓</div>
       <strong>ABC-XYZ-Analyse</strong>
     </div>
-    <div style="background:white; padding:20px; border-radius:12px;">
+    <div style="background:white; padding:20px; border-radius:12px; border:1px solid var(--gray-2);">
       <div style="font-size:32px; margin-bottom:8px;">✓</div>
       <strong>Werkstattfertigung</strong>
     </div>
-    <div style="background:white; padding:20px; border-radius:12px;">
+    <div style="background:white; padding:20px; border-radius:12px; border:1px solid var(--gray-2);">
       <div style="font-size:32px; margin-bottom:8px;">✓</div>
       <strong>Zielkonflikte</strong>
     </div>

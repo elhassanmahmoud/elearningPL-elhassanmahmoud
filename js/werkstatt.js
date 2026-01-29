@@ -32,8 +32,8 @@ Im Gegensatz zur Fließfertigung (Objektprinzip) werden bei der Werkstattfertigu
   <p style="margin-bottom:24px;">Die Fertigung ist nach Verrichtungen organisiert:</p>
   
   <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:20px;">
-    <div style="background:white; padding:24px; border-radius:12px; text-align:center; border:2px solid #dc3545;">
-      <h4 style="color:#dc3545; margin:0 0 16px 0;">Drehwerkstatt</h4>
+    <div style="background:white; padding:24px; border-radius:12px; text-align:center; border:2px solid var(--text-primary);">
+      <h4 style="margin:0 0 16px 0;">Drehwerkstatt</h4>
       <div style="display:flex; flex-direction:column; gap:8px;">
         <div style="background:var(--card-bg); padding:8px; border-radius:6px; font-size:14px;">Dreh 1</div>
         <div style="background:var(--card-bg); padding:8px; border-radius:6px; font-size:14px;">Dreh 2</div>
@@ -41,8 +41,8 @@ Im Gegensatz zur Fließfertigung (Objektprinzip) werden bei der Werkstattfertigu
       </div>
     </div>
     
-    <div style="background:white; padding:24px; border-radius:12px; text-align:center; border:2px solid #007bff;">
-      <h4 style="color:#007bff; margin:0 0 16px 0;">Fräswerkstatt</h4>
+    <div style="background:white; padding:24px; border-radius:12px; text-align:center; border:2px solid var(--text-primary);">
+      <h4 style="margin:0 0 16px 0;">Fräswerkstatt</h4>
       <div style="display:flex; flex-direction:column; gap:8px;">
         <div style="background:var(--card-bg); padding:8px; border-radius:6px; font-size:14px;">Fräs 1</div>
         <div style="background:var(--card-bg); padding:8px; border-radius:6px; font-size:14px;">Fräs 2</div>
@@ -50,8 +50,8 @@ Im Gegensatz zur Fließfertigung (Objektprinzip) werden bei der Werkstattfertigu
       </div>
     </div>
     
-    <div style="background:white; padding:24px; border-radius:12px; text-align:center; border:2px solid #28a745;">
-      <h4 style="color:#28a745; margin:0 0 16px 0;">Bohrwerkstatt</h4>
+    <div style="background:white; padding:24px; border-radius:12px; text-align:center; border:2px solid var(--text-primary);">
+      <h4 style="margin:0 0 16px 0;">Bohrwerkstatt</h4>
       <div style="display:flex; flex-direction:column; gap:8px;">
         <div style="background:var(--card-bg); padding:8px; border-radius:6px; font-size:14px;">Bohr 1</div>
         <div style="background:var(--card-bg); padding:8px; border-radius:6px; font-size:14px;">Bohr 2</div>
@@ -63,8 +63,8 @@ Im Gegensatz zur Fließfertigung (Objektprinzip) werden bei der Werkstattfertigu
   <div style="margin-top:32px; padding:20px; background:white; border-radius:12px;">
     <p style="text-align:center; margin:0;"><strong>Beispiel Produktwege:</strong></p>
     <p style="text-align:center; margin:8px 0 0 0;">
-      <span style="color:#dc3545;">●</span> <strong>Produkt 1 (Motorblock):</strong> Drehwerkstatt → Bohrwerkstatt → Fräswerkstatt<br>
-      <span style="color:#007bff;">●</span> <strong>Produkt 2 (Getriebe):</strong> Drehwerkstatt → Fräswerkstatt → Bohrwerkstatt
+      <strong>Produkt 1 (Motorblock):</strong> Drehwerkstatt → Bohrwerkstatt → Fräswerkstatt<br>
+      <strong>Produkt 2 (Getriebe):</strong> Drehwerkstatt → Fräswerkstatt → Bohrwerkstatt
     </p>
     <p style="text-align:center; margin-top:16px; font-size:14px; color:var(--text-tertiary);">
       → Jedes Produkt wählt seinen eigenen Weg durch die Werkstätten
@@ -82,6 +82,86 @@ Im Gegensatz zur Fließfertigung (Objektprinzip) werden bei der Werkstattfertigu
   <div class="card">
     <strong>Hoher Produktvielfalt</strong>
     <p>Viele verschiedene Varianten möglich</p>
+  </div>
+</div>
+
+<h3>Fertigungsstrategien</h3>
+
+<p>AutoTech nutzt verschiedene <strong>Fertigungsstrategien</strong> je nach Produkttyp:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Strategie</th>
+      <th>Beschreibung</th>
+      <th>Beispiel bei AutoTech</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>MTS</strong><br><small>Make to Stock</small></td>
+      <td>Produkte werden auf Vorrat produziert basierend auf Prognosen</td>
+      <td>Standard-Bremsscheiben</td>
+    </tr>
+    <tr>
+      <td><strong>MTO</strong><br><small>Make to Order</small></td>
+      <td>Produktion erst nach Kundenbestellung</td>
+      <td>Spezialmaschinen</td>
+    </tr>
+    <tr>
+      <td><strong>ATO</strong><br><small>Assemble to Order</small></td>
+      <td>Komponenten auf Lager, Montage nach Bestellung</td>
+      <td>Motorblöcke mit verschiedenen Optionen</td>
+    </tr>
+    <tr>
+      <td><strong>CTO</strong><br><small>Configure to Order</small></td>
+      <td>Konfiguration aus vorgegebenen Optionen</td>
+      <td>Getriebe mit wählbaren Übersetzungen</td>
+    </tr>
+    <tr>
+      <td><strong>ETO</strong><br><small>Engineer to Order</small></td>
+      <td>Entwicklung und Produktion nach Kundenspezifikation</td>
+      <td>Maßgeschneiderte Sensorkomponenten</td>
+    </tr>
+    <tr>
+      <td><strong>BTO</strong><br><small>Build to Order</small></td>
+      <td>Produktion nach Bestellung, Standardkomponenten auf Lager</td>
+      <td>Angepasste Bremsanlagen</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="example-box">
+  <h4>Praxisbeispiel: Fertigungsstrategien bei AutoTech</h4>
+  <p>
+    <strong>Standardmotoren (MTS):</strong> AutoTech produziert 5 gängige Motorblock-Varianten 
+    auf Lager, um schnelle Lieferungen zu garantieren.
+  </p>
+  <p style="margin-top:12px;">
+    <strong>Spezialmotoren (CTO):</strong> Kunden können aus 15 verschiedenen Optionen 
+    (Leistung, Kühlsystem, Sensoren) konfigurieren. Produktion erst nach Bestellung.
+  </p>
+  <p style="margin-top:12px;">
+    <strong>Prototypen (ETO):</strong> Für Entwicklungsprojekte werden komplett neue 
+    Komponenten nach Kundenvorgaben entwickelt und gefertigt.
+  </p>
+</div>
+
+<h3>Weitere Fertigungsarten im Vergleich</h3>
+
+<div class="card-grid">
+  <div class="card">
+    <h4>Gruppenfertigung</h4>
+    <p>Verbindung von Werkstatt- und Fließfertigung</p>
+    <p style="margin-top:8px; font-size:14px;"><strong>Vorteil:</strong> Effizienz + Flexibilität</p>
+    <p style="font-size:14px;"><strong>Beispiel:</strong> Fertigungsinsel für alle Motorvarianten</p>
+  </div>
+  
+  <div class="card">
+    <h4>Fließfertigung</h4>
+    <p>Ausrichtung auf ein spezifisches Produkt</p>
+    <p style="margin-top:8px; font-size:14px;"><strong>Vorteil:</strong> Maximale Effizienz</p>
+    <p style="font-size:14px;"><strong>Beispiel:</strong> Massenproduktion Standard-Schrauben</p>
   </div>
 </div>
 
@@ -163,6 +243,28 @@ Im Gegensatz zur Fließfertigung (Objektprinzip) werden bei der Werkstattfertigu
     </div>
     <button onclick="checkAnswer('q8','b')">Antwort prüfen</button>
     <p id="q8-result"></p>
+  </div>
+
+  <div class="quiz-question">
+    <p class="question-text">Frage 4: Was bedeutet MTS (Make to Stock)?</p>
+    <div class="quiz-options">
+      <label><input type="radio" name="q17" value="a"> Produkte werden auf Vorrat produziert basierend auf Prognosen</label>
+      <label><input type="radio" name="q17" value="b"> Produktion erst nach Kundenbestellung</label>
+      <label><input type="radio" name="q17" value="c"> Montage nach Bestellung</label>
+    </div>
+    <button onclick="checkAnswer('q17','a')">Antwort prüfen</button>
+    <p id="q17-result"></p>
+  </div>
+
+  <div class="quiz-question">
+    <p class="question-text">Frage 5: Welche Fertigungsstrategie passt zu "Kunde konfiguriert aus vorgegebenen Optionen"?</p>
+    <div class="quiz-options">
+      <label><input type="radio" name="q18" value="a"> Make to Stock (MTS)</label>
+      <label><input type="radio" name="q18" value="b"> Configure to Order (CTO)</label>
+      <label><input type="radio" name="q18" value="c"> Engineer to Order (ETO)</label>
+    </div>
+    <button onclick="checkAnswer('q18','b')">Antwort prüfen</button>
+    <p id="q18-result"></p>
   </div>
 </div>
 

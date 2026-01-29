@@ -8,7 +8,7 @@ die <strong>ABC-Analyse</strong> (Wertanalyse) und die <strong>XYZ-Analyse</stro
 
 <h3>ABC-Analyse: Wertanalyse</h3>
 
-<p><strong>Wert = Verbrauchswert für den Artikel</strong></p>
+<p><strong>Wert × Verbrauch = Verbrauchswert für den Artikel</strong></p>
 <p>Artikel werden nach ihrem Wertanteil am Gesamtverbrauch klassifiziert:</p>
 
 <table>
@@ -74,6 +74,37 @@ die <strong>ABC-Analyse</strong> (Wertanalyse) und die <strong>XYZ-Analyse</stro
   </tbody>
 </table>
 
+<h3>RSU-Klassifizierung (Alternative Einteilung)</h3>
+
+<p>Neben XYZ wird teilweise auch die <strong>RSU-Klassifizierung</strong> verwendet:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Klasse</th>
+      <th>Bedeutung</th>
+      <th>Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>R-Artikel</strong></td>
+      <td>Regelmäßiger Verbrauch</td>
+      <td>Konstanter und gleichmäßiger Verbrauch (entspricht X)</td>
+    </tr>
+    <tr>
+      <td><strong>S-Artikel</strong></td>
+      <td>Saisonaler Verbrauch</td>
+      <td>Schwankungen durch saisonale Nachfrage (entspricht Y)</td>
+    </tr>
+    <tr>
+      <td><strong>U-Artikel</strong></td>
+      <td>Unregelmäßiger Verbrauch</td>
+      <td>Unvorhersehbarer Verbrauch (entspricht Z)</td>
+    </tr>
+  </tbody>
+</table>
+
 <div class="example-box">
   <h4>Praxisbeispiel: AutoTech GmbH Lager</h4>
   
@@ -104,9 +135,9 @@ die <strong>ABC-Analyse</strong> (Wertanalyse) und die <strong>XYZ-Analyse</stro
         <td>Getriebe</td>
         <td>€37,85</td>
         <td>12.000,00</td>
-        <td>12,00%</td>
+        <td>36,37%</td>
         <td>0,7</td>
-        <td><span class="badge badge-warning">B-Y</span></td>
+        <td><span class="badge badge-warning">A-Y</span></td>
       </tr>
       <tr>
         <td>1004</td>
@@ -129,17 +160,29 @@ die <strong>ABC-Analyse</strong> (Wertanalyse) und die <strong>XYZ-Analyse</stro
       <tr>
         <td>1001</td>
         <td>Schrauben M8</td>
-        <td>€1,55</td>
+        <td>€3,25</td>
         <td>10.000,00</td>
-        <td>1,24%</td>
+        <td>2,60%</td>
         <td>1,2</td>
         <td><span class="badge badge-danger">C-Z</span></td>
       </tr>
     </tbody>
   </table>
+  
+  <p style="margin-top:20px;">
+  <strong>Strategie für A-X Artikel (Motorblock):</strong><br>
+  Hoher Wert + konstanter Verbrauch → <strong>Just-in-Time Lieferung</strong>, 
+  niedrige Lagerbestände, engmaschige Kontrolle.
+  </p>
+  
+  <p>
+  <strong>Strategie für C-Z Artikel (Schrauben):</strong><br>
+  Geringer Wert + sporadischer Verbrauch → <strong>Kein Lagerbestand</strong>, 
+  Bestellung bei Bedarf.
+  </p>
 </div>
 
-<h3>9-Felder-Matrix: Bewertung und Verteilung</h3>
+<h3>Die 9-Felder-Matrix: Kombination beider Analysen</h3>
 
 <div class="matrix-grid">
   <div class="matrix-cell" style="background:#d4edda; border-color:#28a745;">
@@ -150,12 +193,12 @@ die <strong>ABC-Analyse</strong> (Wertanalyse) und die <strong>XYZ-Analyse</stro
   <div class="matrix-cell" style="background:#fff3cd; border-color:#ffc107;">
     <strong>A-Y</strong>
     <p style="margin:8px 0; font-size:14px;">Schwer planbar</p>
-    <p style="font-size:13px; color:var(--text-tertiary);">Bestellung nach Bedarf</p>
+    <p style="font-size:13px; color:var(--text-tertiary);">Sicherheitsbestand</p>
   </div>
   <div class="matrix-cell" style="background:#f8d7da; border-color:#dc3545;">
     <strong>A-Z</strong>
     <p style="margin:8px 0; font-size:14px;">Keine Planung nötig</p>
-    <p style="font-size:13px; color:var(--text-tertiary);">Einmalige Bestellung</p>
+    <p style="font-size:13px; color:var(--text-tertiary);">Einzelbeschaffung</p>
   </div>
   
   <div class="matrix-cell" style="background:#d1ecf1; border-color:#17a2b8;">
@@ -187,7 +230,7 @@ die <strong>ABC-Analyse</strong> (Wertanalyse) und die <strong>XYZ-Analyse</stro
   <div class="matrix-cell" style="background:#e2e3e5; border-color:#6c757d;">
     <strong>C-Z</strong>
     <p style="margin:8px 0; font-size:14px;">Unregelmäßig</p>
-    <p style="font-size:13px; color:var(--text-tertiary);">Kein Lagerbestand</p>
+    <p style="font-size:13px; color:var(--text-tertiary);">Kein Lager</p>
   </div>
 </div>
 
@@ -225,6 +268,28 @@ die <strong>ABC-Analyse</strong> (Wertanalyse) und die <strong>XYZ-Analyse</stro
     </div>
     <button onclick="checkAnswer('q5','b')">Antwort prüfen</button>
     <p id="q5-result"></p>
+  </div>
+
+  <div class="quiz-question">
+    <p class="question-text">Frage 4: Berechnen Sie den Variationskoeffizienten: Mittelwert = 50, Standardabweichung = 10</p>
+    <div class="quiz-options">
+      <label><input type="radio" name="q15" value="a"> VK = 0,2 → Klasse X</label>
+      <label><input type="radio" name="q15" value="b"> VK = 0,5 → Klasse Y</label>
+      <label><input type="radio" name="q15" value="c"> VK = 5,0 → Klasse Z</label>
+    </div>
+    <button onclick="checkAnswer('q15','a')">Antwort prüfen</button>
+    <p id="q15-result"></p>
+  </div>
+
+  <div class="quiz-question">
+    <p class="question-text">Frage 5: Was bedeutet "R-Artikel" in der RSU-Klassifizierung?</p>
+    <div class="quiz-options">
+      <label><input type="radio" name="q16" value="a"> Regelmäßiger Verbrauch (konstant und gleichmäßig)</label>
+      <label><input type="radio" name="q16" value="b"> Reduzierter Verbrauch</label>
+      <label><input type="radio" name="q16" value="c"> Reparaturbedürftiger Artikel</label>
+    </div>
+    <button onclick="checkAnswer('q16','a')">Antwort prüfen</button>
+    <p id="q16-result"></p>
   </div>
 </div>
 
